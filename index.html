@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dictionary App</title>
+
+    <link rel="stylesheet" href="./styles/font-awesome/css/all.min.css" />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="wrapper" id="wrapper">
+      <header><i class="fas fa-book book"></i> English Dictionary</header>
+
+      <div class="search">
+        <input
+          type="text"
+          id="input-element"
+          placeholder="Search a word"
+          required
+        />
+
+        <i class="fas fa-search search-icon"></i>
+        <i class="far fa-times-circle clear-icon" id="clear-icon"></i>
+      </div>
+      <p class="info-text" id="info-text">
+        Type a word and hit enter to get the meaning, pronunciation, example,
+        and synonyms of the word that you've typed in.
+      </p>
+      <ul>
+        <li class="word">
+          <div class="details">
+            <p id="user-input-wrapper">___</p>
+            <span id="phonetics-wrapper">___</span>
+          </div>
+          <i class="fas fa-volume-up volume-btn" id="volume-btn"></i>
+        </li>
+        <ul class="content">
+          <li class="meaning">
+            <div class="details">
+              <p>Meaning</p>
+              <span id="meaning-wrapper">fealing or showing pleasure</span>
+            </div>
+          </li>
+
+          <li class="example">
+            <div class="details">
+              <p>Example</p>
+              <span id="example-wrapper">Prakash came in looking happy</span>
+            </div>
+          </li>
+
+          <li class="synonyms">
+            <div class="details">
+              <p>Synonyms</p>
+              <div class="list" id="list"></div>
+            </div>
+          </li>
+        </ul>
+      </ul>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
